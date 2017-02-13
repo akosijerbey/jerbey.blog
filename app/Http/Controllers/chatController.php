@@ -25,4 +25,9 @@ class chatController extends Controller
 
 		return response()->json([]);
     }
+
+    public function test()
+    {
+        return view('test');
+    }
 }

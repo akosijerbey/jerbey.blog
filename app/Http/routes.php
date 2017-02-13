@@ -21,6 +21,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
     Route::post('/sendMessage', array('uses' => 'chatController@sendMessage','as' => 'sendMessage'));
     Route::post('/createRoom', array('uses' => 'chatController@createRoom','as' => 'createRoom'));
+    Route::get('/test/{id}/{room}', array('uses' => 'chatController@test','as' => 'test'));
 });
 
 //Route::post('sendmessage', 'chatController@sendMessage');
